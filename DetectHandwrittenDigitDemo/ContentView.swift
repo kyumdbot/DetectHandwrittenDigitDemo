@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @State private var digit1 : Int?
     @State private var digit2 : Int?
     
@@ -30,8 +29,6 @@ struct ContentView: View {
                 .frame(height: 35)
             
             ZStack {
-                
-                
                 Text("\( (digit1 ?? 0) + (digit2 ?? 0)) ")
                     .frame(width: 140, height: 140, alignment: .center)
                     .font(.custom("Courier", size: 58))
@@ -48,15 +45,8 @@ struct ContentView: View {
             
             Spacer()
                 .frame(height: 40)
-            
         }
     }
-    
-    func digit1Updated() {
-        print("digit1: \(String(describing: digit1))")
-    }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
