@@ -166,10 +166,8 @@ class MyDetectHandwrittenDigitCameraView: NSView, AVCaptureVideoDataOutputSample
         setupCamerasPopUpButton()
         
         cameraStackView = NSStackView(views: [camerasPopUpButton])
-        //cameraStackView.spacing = 6
         cameraStackView.edgeInsets = NSEdgeInsets(top: 6, left: 6, bottom: 6, right: 6)
-        cameraStackView.setCustomSpacing(11, after: camerasPopUpButton)
-        
+
         cameraStackView.wantsLayer = true
         cameraStackView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
     }
